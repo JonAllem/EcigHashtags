@@ -41,9 +41,9 @@ if __name__ == '__main__':
     except:
     	server = smtplib.SMTP('smtp.gmail.com', 587)
     	server.starttls()
-    	server.login("spu2308@gmail.com", "***")
+    	server.login("EMAIL ID", "PASSWORD")
  
     	msg = "Program came to an end! Its from the HPC"
-    	server.sendmail("spu2308@gmail.com", "uppu@usc.edu", msg)
-	server.sendmail("spu2308@gmail.com","i.pozzana@gmail.com",msg)
+    	server.sendmail("FROM EMAIL ID", "EMAIL ID TO BE ALERTED WHEN DATA COLLLECTION FAILS", msg)
+	server.sendmail("FROM EMAIL ID","EMAIL ID TO BE ALERTED WHEN DATA COLLECTION FAILS",msg)
     	server.quit()
